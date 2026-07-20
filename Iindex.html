@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DR Lankapalli Bullayya College</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .header {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header p {
+            margin: 5px 0;
+        }
+
+        .container {
+            display: flex;
+            min-height: 600px;
+        }
+
+        .left {
+            width: 25%;
+            background: #e8e8e8;
+            padding: 15px;
+            border-right: 2px solid #ccc;
+        }
+
+        .left h2 {
+            text-align: center;
+        }
+
+        .left button {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            background: #0056b3;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .left button:hover {
+            background: #003f80;
+        }
+
+        .right {
+            width: 75%;
+            background: white;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+
+    <script>
+        function showCourse(course) {
+
+            var details = document.getElementById("rightBox");
+
+            if (course == "bca") {
+
+                details.innerHTML = `
+                <h2>Bachelor of Computer Applications (BCA)</h2>
+
+                <p><b>Duration:</b> 3 Years (6 Semesters)</p>
+
+                <p><b>Eligibility:</b> Intermediate (10+2) Pass</p>
+
+                <h3>Main Subjects</h3>
+
+                <ul>
+                    <li>Computer Fundamentals</li>
+                    <li>Programming in C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Data Structures</li>
+                    <li>DBMS</li>
+                    <li>Operating Systems</li>
+                    <li>Computer Networks</li>
+                    <li>Software Engineering</li>
+                    <li>Web Technologies (HTML, CSS, JavaScript)</li>
+                    <li>Cloud Computing</li>
+                </ul>
+
+                <h3>Career Opportunities</h3>
+
+                <ul>
+                    <li>Software Developer</li>
+                    <li>Web Developer</li>
+                    <li>Data Analyst</li>
+                    <li>Programmer</li>
+                    <li>System Administrator</li>
+                    <li>IT Support Engineer</li>
+                </ul>
+                `;
+            }
+
+            else if (course == "ba") {
+
+                details.innerHTML = `
+                <h2>Bachelor of Arts (BA)</h2>
+
+                <p><b>Duration:</b> 3 Years (6 Semesters)</p>
+
+                <p><b>Eligibility:</b> Intermediate (10+2) Pass</p>
+
+                <h3>Main Subjects</h3>
+
+                <ul>
+                    <li>History</li>
+                    <li>Economics</li>
+                    <li>Political Science</li>
+                    <li>English</li>
+                    <li>Sociology</li>
+                    <li>Public Administration</li>
+                </ul>
+
+                <h3>Career Opportunities</h3>
+
+                <ul>
+                    <li>Teacher</li>
+                    <li>Journalist</li>
+                    <li>Content Writer</li>
+                    <li>Social Worker</li>
+                    <li>Government Jobs</li>
+                    <li>Civil Services</li>
+                </ul>
+                `;
+            }
+
+            else if (course == "bcom") {
+
+                details.innerHTML = `
+                <h2>Bachelor of Commerce (BCom)</h2>
+
+                <p><b>Duration:</b> 3 Years (6 Semesters)</p>
+
+                <p><b>Eligibility:</b> Intermediate (10+2) Pass</p>
+
+                <h3>Main Subjects</h3>
+
+                <ul>
+                    <li>Financial Accounting</li>
+                    <li>Business Economics</li>
+                    <li>Income Tax</li>
+                    <li>Cost Accounting</li>
+                    <li>Business Law</li>
+                    <li>Auditing</li>
+                    <li>Banking</li>
+                    <li>Marketing</li>
+                </ul>
+
+                <h3>Career Opportunities</h3>
+
+                <ul>
+                    <li>Accountant</li>
+                    <li>Bank Officer</li>
+                    <li>Auditor</li>
+                    <li>Tax Consultant</li>
+                    <li>Finance Executive</li>
+                    <li>Business Analyst</li>
+                </ul>
+                `;
+            }
+
+            else if (course == "bba") {
+
+                details.innerHTML = `
+                <h2>Bachelor of Business Administration (BBA)</h2>
+
+                <p><b>Duration:</b> 3 Years (6 Semesters)</p>
+
+                <p><b>Eligibility:</b> Intermediate (10+2) Pass</p>
+
+                <h3>Main Subjects</h3>
+
+                <ul>
+                    <li>Management</li>
+                    <li>Marketing</li>
+                    <li>Human Resource Management</li>
+                    <li>Financial Management</li>
+                    <li>Business Communication</li>
+                    <li>Business Law</li>
+                    <li>Entrepreneurship</li>
+                </ul>
+
+                <h3>Career Opportunities</h3>
+
+                <ul>
+                    <li>HR Executive</li>
+                    <li>Marketing Executive</li>
+                    <li>Business Manager</li>
+                    <li>Sales Manager</li>
+                    <li>Entrepreneur</li>
+                </ul>
+                `;
+            }
+
+            else if (course == "bsc") {
+
+                details.innerHTML = `
+                <h2>Bachelor of Science (BSc)</h2>
+
+                <p><b>Duration:</b> 3 Years (6 Semesters)</p>
+
+                <p><b>Eligibility:</b> Intermediate (10+2) Pass</p>
+
+                <h3>Main Subjects</h3>
+
+                <ul>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Mathematics</li>
+                    <li>Computer Science</li>
+                    <li>Electronics</li>
+                    <li>Statistics</li>
+                </ul>
+
+                <h3>Career Opportunities</h3>
+
+                <ul>
+                    <li>Scientist</li>
+                    <li>Research Assistant</li>
+                    <li>Software Engineer</li>
+                    <li>Teacher</li>
+                    <li>Data Analyst</li>
+                    <li>Laboratory Technician</li>
+                </ul>
+                `;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>DR Lankapalli Bullayya College</h1>
+        <p>Affiliated to Andhra University | NAAC Accredited</p>
+    </div>
+
+    <div class="container">
+
+        <div class="left">
+
+            <h2>Courses</h2>
+
+            <button onclick="showCourse('bca')">BCA</button>
+
+            <button onclick="showCourse('ba')">BA</button>
+
+            <button onclick="showCourse('bcom')">BCom</button>
+
+            <button onclick="showCourse('bba')">BBA</button>
+
+            <button onclick="showCourse('bsc')">BSc</button>
+
+        </div>
+
+        <div class="right" id="rightBox">
+
+            <h2>Welcome to DR Lankapalli Bullayya College</h2>
+
+            <p>
+                Click any course from the left menu to view complete details,
+                including duration, eligibility, subjects, and career opportunities.
+            </p>
+
+            <h3>Available Courses</h3>
+
+            <ul>
+                <li>Bachelor of Computer Applications (BCA)</li>
+                <li>Bachelor of Arts (BA)</li>
+                <li>Bachelor of Commerce (BCom)</li>
+                <li>Bachelor of Business Administration (BBA)</li>
+                <li>Bachelor of Science (BSc)</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
